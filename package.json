@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:build:server": "webpack --config webpack.server.js --watch",
+    "dev:build:client": "webpack --config webpack.client.js --watch",
+    "dev:start": "nodemon --watch build --exec node \"./build/bundle.js\"",
+    "dev": "npm-run-all --parallel dev:**"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bable-loader": "^0.0.1-security",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-config": "^4.4.0-beta.6",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "isomorphic-style-loader": "^5.0.1",
+    "style-loader": "^0.23.1"
+  }
+}
